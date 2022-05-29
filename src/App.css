@@ -1,0 +1,50 @@
+
+/* Setting a background for every component */
+*{
+  background: conic-gradient(from 90deg at 50% 0%, #111, 50%, #222, #111);
+}
+
+/* Centering board */
+.container{
+  width: 95%;
+  height: 100vh;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+/* making 3X3 board with grid */
+.tic-tac-toe{
+  display: grid;
+  width: 230px;
+  height: 230px;
+  margin-bottom: 400px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+/* setting setting for blocks */
+button{
+    border: 3.5px solid gold;
+    
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    font-size: 4.5rem;
+    color: gold;
+  }
+/* for title */
+.title{
+    font-size: 2rem;
+    color: gold;
+    text-align: center;
+  }
+/* for points */
+.p_title, .pts{
+    color: gold;
+    margin-left: 20px;
+    font-size: 1.5rem;
+  }
+
